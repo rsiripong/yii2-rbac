@@ -21,11 +21,11 @@ use yii\rbac\DbManager as BaseDbManager;
  */
 class DbManager extends BaseDbManager implements ManagerInterface
 {
-   var $assignmentTable ="durableauth_assignment";
-    var $itemTable = "durableauth_item";
-    var $itemChildTable = "durableauth_item_child";
+   var $assignmentTable ="auth_assignment";
+    var $itemTable = "auth_item";
+    var $itemChildTable = "auth_item_child";
     
-    var $ruleTable = "durableauth_rule";
+    var $ruleTable = "auth_rule";
     /**
      * @param  int|null $type         If null will return all auth items.
      * @param  array    $excludeItems Items that should be excluded from result array.
